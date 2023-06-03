@@ -17,7 +17,7 @@ namespace UwpDependencyInjectionSample
 
         public string GetGreeting()
         {
-            var result = $"{_prefixMaker.PreFix()} + Vancouver";
+            var result = $"{_prefixMaker.PreFix()} from Vancouver";
 
             return result;
         }
