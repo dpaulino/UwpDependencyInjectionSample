@@ -20,9 +20,11 @@ namespace UwpDependencyInjectionSample
         private static IServiceProvider ConfigureServices()
         {
             var provider = new ServiceCollection()
-                .AddSingleton<IPrefixMaker, EnglishPrefixMaker>()
+                // Play around with this configuration by commenting out English and uncommenting out French.
+                .AddSingleton<IPrefixMaker, EnglishPrefixMaker>() 
                 //.AddSingleton<IPrefixMaker, FrenchPrefixMaker>()
                 .AddSingleton<ClassWithDI>()
+                // Add more classes here.
                 .BuildServiceProvider(true);
 
             return provider;
