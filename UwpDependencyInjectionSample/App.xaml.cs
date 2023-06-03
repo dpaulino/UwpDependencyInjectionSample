@@ -47,7 +47,7 @@ namespace UwpDependencyInjectionSample
             {
                 if (_serviceProvider == null)
                 {
-                    ConfigureServices();
+                    _serviceProvider = ConfigureServices();
                 }
 
                 // Create a Frame to act as the navigation context and navigate to the first page
